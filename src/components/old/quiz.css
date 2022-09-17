@@ -1,0 +1,32 @@
+.osnova {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.polje {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 400px;
+  background-color: blue;
+}
+.poljePitanja {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.poljaOdgovora {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+  flex-direction: column;
+}
+button {
+  height: 50px;
+  margin-top: 30px;
+}

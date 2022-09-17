@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(202, 160, 242);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipes {
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 50px;
+  box-shadow: 10px 10px 5px rgb(116, 168, 186);
+}
+input {
+  width: 300px;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.polje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sastojci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sastojak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.input button {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 40px;
+}

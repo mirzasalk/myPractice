@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(215, 150, 126);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forma {
+  background-color: aliceblue;
+  border: 2px solid black;
+  padding: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+}
+.logOutB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span {
+  align-self: flex-start;
+}

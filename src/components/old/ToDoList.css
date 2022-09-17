@@ -1,0 +1,109 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 70%;
+}
+.categoryOfItem {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  background-color: #fff;
+  border: 2px solid black;
+  height: 40px;
+}
+input {
+  border-radius: 0px;
+  height: 38px;
+}
+.main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+}
+.pomocniDiv {
+  width: 38%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100px;
+}
+.category {
+  width: 25.3%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  border: 2px solid black;
+  margin-right: 1px;
+  margin-top: 1px;
+}
+.ParagrafCat {
+  height: 20px;
+
+  width: 100%;
+}
+.ParagrafCat:hover {
+  background-color: rgb(146, 146, 242);
+}
+.plus {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+}
+.lista {
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
+.taskNo {
+  display: flex;
+  border: 1px solid black;
+  width: 200px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.taskYes {
+  display: flex;
+  border: 1px solid black;
+  width: 200px;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+  background-color: rgb(202, 135, 135);
+  color: red;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.non {
+  display: none;
+}
+img {
+  border: 1px solid black;
+  margin: 1px;
+}
+.TextOfTask {
+  display: flex;
+  flex-wrap: wrap;
+}

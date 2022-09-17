@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#in {
+  width: 300px;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.mapDiv {
+  margin-top: 20px;
+  font-size: 20px;
+}
