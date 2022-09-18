@@ -3,9 +3,12 @@ import "./style.css";
 
 const Product = () => {
   return (
-    <div>
+    <div id="product">
       <Nav></Nav>
-      Product
+      <div className="deepInTheMountaine">
+        {" "}
+        <h1>Find Your Self Deep In Mountains</h1>
+      </div>
     </div>
   );
 };

@@ -3,9 +3,13 @@ import "./style.css";
 
 const Services = () => {
   return (
-    <div>
+    <div id="services">
       <Nav></Nav>
-      Services
+      <div className="best">
+        <h1>
+          <strong>You Are Everywhere</strong>
+        </h1>
+      </div>
     </div>
   );
 };
