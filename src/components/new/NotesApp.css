@@ -1,0 +1,76 @@
+#main {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main input {
+  margin-bottom: 50px;
+  height: 30px;
+  width: 50%;
+  padding-left: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.311);
+}
+.NotesField {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.AddNotes {
+  background-color: rgb(119, 177, 249);
+  width: 300px;
+  padding: 10px;
+  height: 190px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.AddNotes textarea {
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  outline: 0;
+  resize: none;
+  overflow: auto;
+}
+.AddNotesFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.SaveBtn {
+  width: 53px;
+  height: 23px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.Note {
+  background-color: rgb(241, 207, 130);
+  width: 300px;
+  padding: 5px 10px 5px 10px;
+  height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.NotesText {
+  width: 100%;
+  height: 165px;
+}
+.AddNotesFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AddNotesFooter img {
+  cursor: pointer;
+}
