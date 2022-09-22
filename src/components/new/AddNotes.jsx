@@ -13,9 +13,8 @@ const AddNotes = (e) => {
       ...Notes,
       { text: iText, id: Math.floor(Math.random() * 10000) },
     ]);
-    {
-      console.log(Notes);
-    }
+    e.preventDefault();
+    console.log(Notes);
   };
   return (
     <div className="AddNotes">
