@@ -4,23 +4,31 @@ import "./NotesApp.css";
 
 const AddNotes = (e) => {
   const { Notes, setNotes } = useContext(MyContext);
-  let iText = "";
+  const [iText, setIText] = useState("");
+
+  let today = new Date(),
+    date =
+      today.getDate() +
+      "/" +
+      (today.getMonth() + 1) +
+      "/" +
+      today.getFullYear();
   const handleInputText = (e) => {
-    iText = e.target.value;
+    if (e.target.value.length <= 200) setIText(e.target.value);
   };
   const handleClick = () => {
     setNotes([
       ...Notes,
-      { text: iText, id: Math.floor(Math.random() * 10000) },
+      { text: iText, id: Math.floor(Math.random() * 10000), d: date },
     ]);
-    e.preventDefault();
-    console.log(Notes);
+    setIText("");
   };
   return (
     <div className="AddNotes">
       <textarea
         name="notes"
         id="notes"
+        value={iText}
         placeholder="Type For Add New Note..."
         cols="30"
         rows="10"
@@ -29,7 +37,7 @@ const AddNotes = (e) => {
         }}
       ></textarea>
       <div className="AddNotesFooter">
-        <small>200 Romaining</small>
+        <small>{200 - iText.length} Romaining</small>
         <button className="SaveBtn" onClick={handleClick}>
           Save
         </button>
