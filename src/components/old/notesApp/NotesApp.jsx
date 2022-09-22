@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { MyContext } from "./Context";
 import "./NotesApp.css";
 import Header from "./Header";
-import NotesList from "./NotesList";
+import NotesList from "../NotesList";
 const NotesApp = () => {
   const [filterText, setFilterText] = useState("");
   const { setNotes, Notes } = useContext(MyContext);
