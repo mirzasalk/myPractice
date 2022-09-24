@@ -1,0 +1,28 @@
+.inputBtn {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: large;
+}
+.inputBtn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  transition: 1s;
+}
+.wordInput {
+  width: 300px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  margin-right: 5px;
+  padding-left: 10px;
+  color: #fff;
+}
+.inputFiled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
