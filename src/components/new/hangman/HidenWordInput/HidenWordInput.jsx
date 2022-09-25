@@ -5,8 +5,23 @@ import "./HidenWordInput.css";
 
 const HidenWordInput = () => {
   const [Word, setWord] = useState("");
-  const { setHidenWord } = useContext(myContext);
-  const [btnClick, setBtnClick] = useState(false);
+  const {
+    hidenWord,
+    setHidenWord,
+    wrongLetters,
+    setWrongLetters,
+    corectLetters,
+    setCorectLetters,
+    eror,
+    setEror,
+    btnClick,
+    setBtnClick,
+    helpLetter,
+    setHelpLetter,
+    corect,
+    setCorect,
+  } = useContext(myContext);
+
   return (
     <div className="inputFiled">
       {!btnClick ? (
@@ -36,8 +51,13 @@ const HidenWordInput = () => {
         <button
           className="inputBtn"
           onClick={(e) => {
-            setBtnClick(!btnClick);
+            setBtnClick(false);
             setHidenWord([]);
+            setWrongLetters([]);
+            setEror(0);
+            setCorectLetters([]);
+            setHelpLetter("");
+            setCorect(-1);
           }}
         >
           refresh

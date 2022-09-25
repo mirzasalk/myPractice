@@ -5,12 +5,23 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.letterField {
+.letterFieldCorect {
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 5px solid #fff;
-  width: 100px;
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+.letterField {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #fff;
+  width: 50px;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 50px;
@@ -19,7 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 50px;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 50px;

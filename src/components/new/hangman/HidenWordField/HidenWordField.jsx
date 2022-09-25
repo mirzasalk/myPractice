@@ -3,7 +3,7 @@ import { myContext } from "../constext";
 import "./HidenWordField.css";
 
 const HidenWordField = () => {
-  const { hidenWord } = useContext(myContext);
+  const { hidenWord, corectLetters } = useContext(myContext);
   let word = [];
   for (let i = 0; i < hidenWord.length; i++) {
     word.push(hidenWord[i]);
@@ -19,11 +19,19 @@ const HidenWordField = () => {
             </div>
           );
         } else {
-          return (
-            <div key={index} className="letterField">
-              {item}
-            </div>
-          );
+          if (corectLetters.includes(item)) {
+            return (
+              <div key={index} className="letterFieldCorect">
+                {item}
+              </div>
+            );
+          } else {
+            return (
+              <div key={index} className="letterField">
+                {item}
+              </div>
+            );
+          }
         }
       })}
     </div>
