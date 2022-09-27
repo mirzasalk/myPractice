@@ -40,9 +40,11 @@ const HidenWordInput = () => {
         <button
           className="inputBtn"
           onClick={(e) => {
-            setHidenWord(Word);
-            setBtnClick(!btnClick);
-            setWord([]);
+            if (Word !== "") {
+              setHidenWord(Word);
+              setBtnClick(!btnClick);
+              setWord([]);
+            }
           }}
         >
           Save
