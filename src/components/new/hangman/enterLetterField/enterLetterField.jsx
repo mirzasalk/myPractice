@@ -17,7 +17,7 @@ const EnterLetterField = () => {
     corect,
     setCorect,
   } = useContext(myContext);
-
+  let hidenWordLeterNoRepeat = [];
   let word = [];
   for (let i = 0; i < hidenWord.length; i++) {
     word.push(hidenWord[i]);
@@ -33,7 +33,7 @@ const EnterLetterField = () => {
             value={helpLetter}
             placeholder="Enter Next Letter"
             onChange={(e) => {
-              if (helpLetter.length < 1 || e.key === "delete") {
+              if (helpLetter.length < 1) {
                 setHelpLetter(e.target.value);
               }
             }}
@@ -43,7 +43,10 @@ const EnterLetterField = () => {
                 setWrongLetters([...wrongLetters, e.target.value]);
                 setHelpLetter("");
                 setEror(eror + 1);
-              } else if (e.key === "Enter") {
+              } else if (
+                e.key === "Enter" &&
+                !corectLetters.includes(e.target.value)
+              ) {
                 setCorectLetters([...corectLetters, e.target.value]);
                 setHelpLetter("");
                 if (corect === -1) {
@@ -51,12 +54,25 @@ const EnterLetterField = () => {
                 } else {
                   setCorect(corect + 1);
                 }
+              } else if (
+                e.key === "Enter" &&
+                corectLetters.includes(e.target.value)
+              ) {
+                setHelpLetter("");
               }
             }}
           />
           <div className="wrongLettersText">
             <h3>Wrong Letters:</h3>
-            <div className="wrongLetterList">{wrongLetters}</div>
+            <div className="wrongLetterList">
+              {wrongLetters.map((letter, index) => {
+                if (index === 0) {
+                  return <p>{letter}</p>;
+                } else {
+                  return <p>, {letter}</p>;
+                }
+              })}
+            </div>
           </div>
         </div>
       )}

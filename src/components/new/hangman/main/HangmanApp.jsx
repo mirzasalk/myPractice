@@ -22,6 +22,12 @@ const Hangman = () => {
     corect,
     setCorect,
   } = useContext(myContext);
+  let hidenWordLeterNoRepeat = [];
+  for (let i = 0; i < hidenWord.length; i++) {
+    if (!hidenWordLeterNoRepeat.includes(hidenWord[i]) && hidenWord[i] !== " ")
+      hidenWordLeterNoRepeat.push(hidenWord[i]);
+  }
+
   return (
     <div className="main">
       {corect}
@@ -43,7 +49,7 @@ const Hangman = () => {
           </button>
         </div>
       ) : null}
-      {corect === hidenWord.length ? (
+      {corect === hidenWordLeterNoRepeat.length ? (
         <div className="GameOver">
           <h1>You Win!!!</h1>
           <button
